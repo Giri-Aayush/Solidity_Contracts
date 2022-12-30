@@ -3,13 +3,10 @@ pragma solidity ^0.8.0;
 
 contract Counter{
 
-    uint count = 0;
+    uint public count = 0;
 
-   // we can remove the constructor and directly specify the variable initiation value
-
-    function getCount() public view returns(uint){
-        return count;
-    }
+   // we can remove the constructor and directly specify the public variable
+   //we can also remove the get function as a public variable comes with a get function
 
     function incrementCount() public {
         count++;
